@@ -17,7 +17,8 @@ class WebMoney
      */
     public function __construct(AbstractRequester $xmlRequester)
     {
-        $this->xmlRequester = $xmlRequester;
+        $this->xmlRequester1 = $xmlRequester;
+        $this->xmlRequester = $this->xmlRequester1;
     }
 
     /**

@@ -52,7 +52,7 @@ class SignerTest extends \PHPUnit_Framework_TestCase
         );
 
         // Seed the random generator with 0 to get a predictable signature
-        mt_srand(0);
+        mt_srand(0); //help
         $seededSignature = $signer->sign(self::TEST_STRING);
 
         $this->assertEquals(
